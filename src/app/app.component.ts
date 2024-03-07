@@ -8,14 +8,4 @@ import { UserService } from './service/user.service';
 })
 export class AppComponent {
   title = 'api';
-
-  data: any;
-  constructor(private user: UserService){
-      this.user.getData().subscribe(data => {
-        console.warn(data);
-        this.data = data;
-      })
-  }
-
-
 }
